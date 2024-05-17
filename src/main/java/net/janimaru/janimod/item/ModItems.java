@@ -10,7 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item RUBY = registerItem("ruby_block", new Item(new Item.Settings()));
+    public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

@@ -15,7 +15,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block RUBY_BLOCK = registerBlock("ruby",
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.RED)));
 
     private static Block registerBlock(String name, Block block) {
