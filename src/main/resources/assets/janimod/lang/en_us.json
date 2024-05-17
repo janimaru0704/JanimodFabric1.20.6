@@ -3,6 +3,7 @@
   "item.janimod.ore_detector": "Ore Detector",
   "item.janimod.ore_detector.msg": "Found %s at Pos: %d, %d, %d",
   "item.janimod.ore_detector.msg_fail": "No Ores Found",
+  "item.janimod.ore_detector.tooltip": "Find ores underground",
   "item.janimod.hamburger": "Hamburger",
 
   "block.janimod.ruby_block": "Block of Ruby",

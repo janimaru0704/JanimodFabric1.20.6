@@ -3,9 +3,11 @@ package net.janimaru.janimod.item.custom;
 import net.janimaru.janimod.Janimod;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.client.item.TooltipType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
@@ -14,6 +16,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 
@@ -50,5 +53,11 @@ public class OreDetectorItem extends Item {
 
         context.getStack().damage(1, player, EquipmentSlot.MAINHAND);
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("item.janimod.ore_detector.tooltip"));
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }
