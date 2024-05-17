@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "building",
   "pattern": [
     "RRR",
     "RRR",
@@ -11,6 +12,6 @@
     }
   },
   "result": {
-    "item": "janimod:ruby_block"
+    "id": "janimod:ruby_block"
   }
 }

@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "janimod:ruby",
+  "category": "misc",
   "ingredients": [
     {
       "item": "janimod:ruby_block"
     }
   ],
   "result": {
-    "item": "janimod:ruby",
+    "id": "janimod:ruby",
     "count": 9
   }
 }
