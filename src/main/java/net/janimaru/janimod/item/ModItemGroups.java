@@ -2,6 +2,7 @@ package net.janimaru.janimod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.janimaru.janimod.Janimod;
+import net.janimaru.janimod.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -15,6 +16,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.janimod_all"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries(((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+
+                        entries.add(ModBlocks.RUBY_BLOCK);
                     })).build());
 
     public static void registerItemGroups() {
