@@ -1,5 +1,8 @@
 {
   "item.janimod.ruby": "Ruby",
+  "item.janimod.ore_detector": "Ore Detector",
+  "item.janimod.ore_detector.msg": "Found %s at Pos: %d, %d, %d",
+  "item.janimod.ore_detector.msg_fail": "No Ores Found",
 
   "block.janimod.ruby_block": "Block of Ruby",
 

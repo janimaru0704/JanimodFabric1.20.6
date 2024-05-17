@@ -16,6 +16,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.janimod_all"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries(((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+                        entries.add(ModItems.ORE_DETECTOR);
 
                         entries.add(ModBlocks.RUBY_BLOCK);
                     })).build());
