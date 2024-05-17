@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "janimod",
+	"version": "${version}",
+	"name": "Janimaru's MOD",
+	"description": "This is MOD made by Janimaru0704",
+	"authors": [
+		"Janimaru0704"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.janimaru.janimod.Janimod"
+		],
+		"client": [
+			"net.janimaru.janimod.JanimodClient"
+		],
+		"fabric-datagen": [
+          "net.janimaru.janimod.JanimodDataGenerator"
+		]
+	},
+	"mixins": [
+		"janimod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
