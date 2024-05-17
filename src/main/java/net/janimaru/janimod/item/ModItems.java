@@ -12,8 +12,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
+
     public static final Item ORE_DETECTOR = registerItem("ore_detector",
             new OreDetectorItem(new Item.Settings().maxDamage(128)));
+
+    public static final Item HAMBURGER = registerItem("hamburger", new Item(new Item.Settings()
+            .food(ModFoodComponents.HAMBURGER)));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
