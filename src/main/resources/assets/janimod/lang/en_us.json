@@ -1,5 +1,7 @@
 {
   "item.janimod.ruby": "Ruby",
 
+  "block.janimod.ruby_block": "Block of Ruby",
+
   "itemGroup.janimod_all": "Janimaru's MOD"
 }

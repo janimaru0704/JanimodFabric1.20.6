@@ -2,6 +2,7 @@ package net.janimaru.janimod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.janimaru.janimod.block.ModBlocks;
 import net.janimaru.janimod.item.ModItemGroups;
 import net.janimaru.janimod.item.ModItems;
 import org.slf4j.Logger;
@@ -14,6 +15,8 @@ public class Janimod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
