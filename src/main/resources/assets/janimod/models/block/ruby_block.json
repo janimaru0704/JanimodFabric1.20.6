@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "cube_all": "janimod:block/ruby_block"
+    "all": "janimod:block/ruby_block"
   }
 }
