@@ -1,7 +1,5 @@
 package net.janimaru.janimod.block;
 
-import net.fabricmc.fabric.api.block.v1.FabricBlockState;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.janimaru.janimod.Janimod;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
