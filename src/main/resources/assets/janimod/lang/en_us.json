@@ -7,6 +7,8 @@
   "item.janimod.hamburger": "Hamburger",
 
   "block.janimod.ruby_block": "Block of Ruby",
+  "block.janimod.ruby_ore": "Ruby Ore",
+  "block.janimod.deepslate_ruby_ore": "Deepslate Ruby Ore",
 
   "itemGroup.janimod_all": "Janimaru's MOD"
 }

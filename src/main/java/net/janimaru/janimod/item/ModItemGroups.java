@@ -1,9 +1,11 @@
 package net.janimaru.janimod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.janimaru.janimod.Janimod;
 import net.janimaru.janimod.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,6 +22,8 @@ public class ModItemGroups {
                         entries.add(ModItems.HAMBURGER);
 
                         entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
                     })).build());
 
     public static void registerItemGroups() {

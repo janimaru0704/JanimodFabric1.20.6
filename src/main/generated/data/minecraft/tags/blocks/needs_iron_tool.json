@@ -1,5 +1,6 @@
 {
   "values": [
-    "janimod:ruby_block"
+    "janimod:ruby_block",
+    "#janimod:ruby_ores"
   ]
 }

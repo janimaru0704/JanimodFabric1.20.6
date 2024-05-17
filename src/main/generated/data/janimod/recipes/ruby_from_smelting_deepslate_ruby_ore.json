@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.2,
+  "group": "ruby",
+  "ingredient": {
+    "item": "janimod:deepslate_ruby_ore"
+  },
+  "result": {
+    "id": "janimod:ruby"
+  }
+}

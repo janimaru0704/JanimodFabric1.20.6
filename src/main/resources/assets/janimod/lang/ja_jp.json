@@ -7,6 +7,8 @@
   "item.janimod.hamburger": "ハンバーガー",
 
   "block.janimod.ruby_block": "ルビーブロック",
+  "block.janimod.ruby_ore": "ルビー鉱石",
+  "block.janimod.deepslate_ruby_ore": "深層ルビー鉱石",
 
   "itemGroup.janimod_all": "じゃにまるのMOD"
 }

@@ -17,16 +17,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(ModTags.Blocks.RUBY_ORES)
+                .add(ModBlocks.RUBY_ORE).add(ModBlocks.DEEPSLATE_RUBY_ORE);
+
         getOrCreateTagBuilder(ModTags.Blocks.DETECTABLE_ORES)
                 .forceAddTag(BlockTags.COAL_ORES).forceAddTag(BlockTags.COPPER_ORES)
                 .forceAddTag(BlockTags.DIAMOND_ORES).forceAddTag(BlockTags.EMERALD_ORES)
                 .forceAddTag(BlockTags.GOLD_ORES).forceAddTag(BlockTags.IRON_ORES)
-                .forceAddTag(BlockTags.LAPIS_ORES).add(Blocks.NETHER_QUARTZ_ORE);
+                .forceAddTag(BlockTags.LAPIS_ORES).forceAddTag(ModTags.Blocks.RUBY_ORES)
+                .add(Blocks.NETHER_QUARTZ_ORE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RUBY_BLOCK);
+                .add(ModBlocks.RUBY_BLOCK).forceAddTag(ModTags.Blocks.RUBY_ORES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.RUBY_BLOCK);
+                .add(ModBlocks.RUBY_BLOCK).forceAddTag(ModTags.Blocks.RUBY_ORES);
     }
 }

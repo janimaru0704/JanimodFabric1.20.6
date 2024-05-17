@@ -19,9 +19,6 @@ public class ModItems {
     public static final Item HAMBURGER = registerItem("hamburger", new Item(new Item.Settings()
             .food(ModFoodComponents.HAMBURGER)));
 
-    private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RUBY);
-    }
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Janimod.MOD_ID, name), item);
@@ -29,7 +26,5 @@ public class ModItems {
 
     public static void registerModItems() {
         Janimod.LOGGER.info("Registering Mod Items for " + Janimod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }
 }
