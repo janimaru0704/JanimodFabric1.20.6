@@ -9,6 +9,12 @@
   "block.janimod.ruby_block": "ルビーブロック",
   "block.janimod.ruby_ore": "ルビー鉱石",
   "block.janimod.deepslate_ruby_ore": "深層ルビー鉱石",
+  "block.janimod.maple_log": "カエデの原木",
+  "block.janimod.maple_wood": "カエデの木",
+  "block.janimod.stripped_maple_log": "樹皮を剥いだカエデの原木",
+  "block.janimod.stripped_maple_wood": "樹皮を剥いだカエデの木",
+  "block.janimod.maple_leaves": "カエデの葉",
+  "block.janimod.maple_planks": "カエデの板材",
 
   "itemGroup.janimod_all": "じゃにまるのMOD"
 }

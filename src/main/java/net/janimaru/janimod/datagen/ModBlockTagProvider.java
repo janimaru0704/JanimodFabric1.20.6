@@ -27,6 +27,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.LAPIS_ORES).forceAddTag(ModTags.Blocks.RUBY_ORES)
                 .add(Blocks.NETHER_QUARTZ_ORE);
 
+        getOrCreateTagBuilder(ModTags.Blocks.MAPLE_LOGS)
+                .add(ModBlocks.MAPLE_LOG).add(ModBlocks.MAPLE_WOOD)
+                .add(ModBlocks.STRIPPED_MAPLE_LOG)
+                .add(ModBlocks.STRIPPED_MAPLE_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.LOGS).forceAddTag(ModTags.Blocks.MAPLE_LOGS);
+        getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.MAPLE_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS).add(ModBlocks.MAPLE_PLANKS);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RUBY_BLOCK).forceAddTag(ModTags.Blocks.RUBY_ORES);
 

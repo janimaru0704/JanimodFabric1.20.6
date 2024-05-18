@@ -11,6 +11,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> DETECTABLE_ORES = createTag("detectable_ores");
         public static final TagKey<Block> RUBY_ORES = createTag("ruby_ores");
+        public static final TagKey<Block> MAPLE_LOGS = createTag("maple_logs");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(Janimod.MOD_ID, name));
@@ -18,6 +19,7 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> MAPLE_LOGS = createTag("maple_logs");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(Janimod.MOD_ID, name));

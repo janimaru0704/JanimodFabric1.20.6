@@ -7,8 +7,12 @@ import net.janimaru.janimod.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 
 public class ModModelProvider extends FabricModelProvider {
+    private static final BlockFamily MAPLE_FAMILY = BlockFamilies.register(ModBlocks.MAPLE_PLANKS).build();
+
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
@@ -18,6 +22,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_RUBY_ORE);
+
+        blockStateModelGenerator.registerLog(ModBlocks.MAPLE_LOG).log(ModBlocks.MAPLE_LOG).wood(ModBlocks.MAPLE_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MAPLE_LOG).log(ModBlocks.STRIPPED_MAPLE_LOG).wood(ModBlocks.STRIPPED_MAPLE_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAPLE_LEAVES);
+
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAPLE_PLANKS).family(MAPLE_FAMILY);
     }
 
     @Override

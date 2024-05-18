@@ -22,6 +22,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                        entries.add(ModBlocks.MAPLE_LOG);
+                        entries.add(ModBlocks.MAPLE_WOOD);
+                        entries.add(ModBlocks.STRIPPED_MAPLE_LOG);
+                        entries.add(ModBlocks.STRIPPED_MAPLE_WOOD);
+                        entries.add(ModBlocks.MAPLE_PLANKS);
+                        entries.add(ModBlocks.MAPLE_LEAVES);
                     })).build());
 
     public static void registerItemGroups() {

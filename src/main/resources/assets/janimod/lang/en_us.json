@@ -9,6 +9,12 @@
   "block.janimod.ruby_block": "Block of Ruby",
   "block.janimod.ruby_ore": "Ruby Ore",
   "block.janimod.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.janimod.maple_log": "Maple Log",
+  "block.janimod.maple_wood": "Maple Wood",
+  "block.janimod.stripped_maple_log": "Stripped Maple Log",
+  "block.janimod.stripped_maple_wood": "Stripped Maple Wood",
+  "block.janimod.maple_leaves": "Maple Leaves",
+  "block.janimod.maple_planks": "Maple Planks",
 
   "itemGroup.janimod_all": "Janimaru's MOD"
 }

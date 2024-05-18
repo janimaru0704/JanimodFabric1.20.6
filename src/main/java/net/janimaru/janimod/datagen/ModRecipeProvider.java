@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.janimaru.janimod.block.ModBlocks;
 import net.janimaru.janimod.item.ModItems;
+import net.janimaru.janimod.util.ModTags;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
@@ -39,5 +40,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BREAD), conditionsFromItem(Items.BREAD))
                 .criterion(hasItem(Items.COOKED_BEEF), conditionsFromItem(Items.COOKED_BEEF))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HAMBURGER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAPLE_WOOD)
+                .pattern("XX").pattern("XX")
+                .input('X', ModBlocks.MAPLE_LOG)
+                .criterion(hasItem(ModBlocks.MAPLE_LOG), conditionsFromItem(ModBlocks.MAPLE_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_WOOD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_MAPLE_WOOD)
+                .pattern("XX").pattern("XX")
+                .input('X', ModBlocks.STRIPPED_MAPLE_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_MAPLE_LOG), conditionsFromItem(ModBlocks.STRIPPED_MAPLE_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_MAPLE_WOOD)));
+
+        offerPlanksRecipe(exporter, ModBlocks.MAPLE_PLANKS, ModTags.Items.MAPLE_LOGS, 4);
     }
 }
