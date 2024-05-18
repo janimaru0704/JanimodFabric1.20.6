@@ -1,0 +1,17 @@
+// 1.20.6	2024-05-18T12:06:44.1537286	Janimaru's MOD/Tags for minecraft:block
+53cbfcd5098852798826dc7b505838992e28496f data\minecraft\tags\blocks\wooden_fences.json
+69a75efb1b571f2f9a60b9ce05cc49efcb9ee77e data\minecraft\tags\blocks\wooden_doors.json
+e18f9d5bfb08b770e93e78b27fb75573b70926d7 data\minecraft\tags\blocks\planks.json
+dee70e4d482dd84b03e3d435653903a07fe3bcc2 data\janimod\tags\blocks\maple_logs.json
+2260159d50ab25f25702457bdc2e719634f289db data\janimod\tags\blocks\detectable_ores.json
+fd8e614dc5236ffed0b9489373f6f0188686c40c data\minecraft\tags\blocks\fence_gates.json
+2d66438bfb34f7c7e53b2c2b3e9f23da2239e944 data\janimod\tags\blocks\ruby_ores.json
+2bef4e5c6546468f8c18963c1e63eaa48df4af18 data\minecraft\tags\blocks\mineable\pickaxe.json
+8b57fc2935c9888f8681e5ae73eac83ebb7039f5 data\minecraft\tags\blocks\wooden_pressure_plates.json
+937b20d6bc5ba35795823de60f631257b8df516d data\minecraft\tags\blocks\logs_that_burn.json
+e6cbdf0fda294e93a1d6b756e3c3b3114b807a13 data\minecraft\tags\blocks\wooden_stairs.json
+2bef4e5c6546468f8c18963c1e63eaa48df4af18 data\minecraft\tags\blocks\needs_iron_tool.json
+08ded153e240921d722fed192712c3dd27392c53 data\minecraft\tags\blocks\wooden_trapdoors.json
+552f117799fa95f1c156cd19766df46a4d876551 data\minecraft\tags\blocks\wooden_buttons.json
+96aff51eeb7813a1a9b31e52e2c41cc0f93f8e4d data\minecraft\tags\blocks\wooden_slabs.json
+2ab561b28d10693c3bb2f2193029ff9572fa329a data\minecraft\tags\blocks\leaves.json
