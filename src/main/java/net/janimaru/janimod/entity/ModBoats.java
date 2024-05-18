@@ -11,7 +11,6 @@ import net.minecraft.util.Identifier;
 
 public class ModBoats {
     public static final Identifier MAPLE_BOAT_ID = new Identifier(Janimod.MOD_ID, "maple");
-
     public static final RegistryKey<TerraformBoatType> MAPLE_BOAT_KEY = TerraformBoatTypeRegistry.createKey(MAPLE_BOAT_ID);
 
     public static void registerBoats() {
