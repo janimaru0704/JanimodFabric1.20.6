@@ -37,6 +37,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MAPLE_BUTTON);
                         entries.add(ModItems.MAPLE_SIGN);
                         entries.add(ModItems.MAPLE_HANGING_SIGN);
+                        entries.add(ModItems.MAPLE_BOAT);
+                        entries.add(ModItems.MAPLE_CHEST_BOAT);
                         entries.add(ModBlocks.MAPLE_LEAVES);
                     })).build());
 

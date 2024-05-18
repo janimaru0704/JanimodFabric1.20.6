@@ -1,9 +1,11 @@
 package net.janimaru.janimod;
 
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.janimaru.janimod.block.ModBlocks;
+import net.janimaru.janimod.entity.ModBoats;
 import net.janimaru.janimod.item.ModItems;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.ItemGroups;
@@ -17,6 +19,8 @@ public class JanimodClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_TRAPDOOR, RenderLayer.getCutout());
+
+        TerraformBoatClientHelper.registerModelLayers(ModBoats.MAPLE_BOAT_ID, false);
     }
 
     private void addItemsToGroups() {
@@ -29,6 +33,8 @@ public class JanimodClient implements ClientModInitializer {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(ModItems.ORE_DETECTOR);
+            entries.add(ModItems.MAPLE_BOAT);
+            entries.add(ModItems.MAPLE_CHEST_BOAT);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(ModItems.HAMBURGER);

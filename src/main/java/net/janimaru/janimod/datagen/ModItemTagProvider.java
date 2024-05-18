@@ -37,5 +37,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS).add(ModBlocks.MAPLE_BUTTON.asItem());
         getOrCreateTagBuilder(ItemTags.SIGNS).add(ModItems.MAPLE_SIGN);
         getOrCreateTagBuilder(ItemTags.HANGING_SIGNS).add(ModItems.MAPLE_HANGING_SIGN);
+        getOrCreateTagBuilder(ItemTags.BOATS).add(ModItems.MAPLE_BOAT);
+        getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(ModItems.MAPLE_CHEST_BOAT);
     }
 }

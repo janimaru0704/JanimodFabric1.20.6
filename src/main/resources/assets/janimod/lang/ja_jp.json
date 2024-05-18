@@ -5,6 +5,8 @@
   "item.janimod.ore_detector.msg_fail": "鉱石は見つかりませんでした",
   "item.janimod.ore_detector.tooltip": "地下の鉱石を探す",
   "item.janimod.hamburger": "ハンバーガー",
+  "item.janimod.maple_boat": "カエデのボート",
+  "item.janimod.maple_chest_boat": "チェスト付きのカエデのボート",
 
   "block.janimod.ruby_block": "ルビーブロック",
   "block.janimod.ruby_ore": "ルビー鉱石",

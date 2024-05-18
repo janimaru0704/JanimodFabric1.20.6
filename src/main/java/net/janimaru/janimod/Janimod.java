@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.janimaru.janimod.block.ModBlocks;
+import net.janimaru.janimod.entity.ModBoats;
 import net.janimaru.janimod.item.ModItemGroups;
 import net.janimaru.janimod.item.ModItems;
 import net.janimaru.janimod.util.ModTags;
@@ -32,5 +33,7 @@ public class Janimod implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_SLAB, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_FENCE, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_FENCE_GATE, 5, 20);
+
+		ModBoats.registerBoats();
 	}
 }

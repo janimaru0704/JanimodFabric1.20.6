@@ -1,7 +1,9 @@
 package net.janimaru.janimod.item;
 
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.janimaru.janimod.Janimod;
 import net.janimaru.janimod.block.ModBlocks;
+import net.janimaru.janimod.entity.ModBoats;
 import net.janimaru.janimod.item.custom.OreDetectorItem;
 import net.minecraft.item.HangingSignItem;
 import net.minecraft.item.Item;
@@ -24,6 +26,11 @@ public class ModItems {
     public static final Item MAPLE_HANGING_SIGN = registerItem("maple_hanging_sign",
             new HangingSignItem(ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN,
                     new Item.Settings().maxCount(16)));
+
+    public static final Item MAPLE_BOAT = TerraformBoatItemHelper
+            .registerBoatItem(new Identifier(Janimod.MOD_ID, "maple_boat"), ModBoats.MAPLE_BOAT_KEY, false);
+    public static final Item MAPLE_CHEST_BOAT = TerraformBoatItemHelper
+            .registerBoatItem(new Identifier(Janimod.MOD_ID, "maple_chest_boat"), ModBoats.MAPLE_BOAT_KEY, true);
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Janimod.MOD_ID, name), item);
