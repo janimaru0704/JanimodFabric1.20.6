@@ -84,5 +84,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
                 .group("wooden_sign").offerTo(exporter);
         offerHangingSignRecipe(exporter, ModItems.MAPLE_HANGING_SIGN, ModBlocks.STRIPPED_MAPLE_LOG);
+        offerBoatRecipe(exporter, ModItems.MAPLE_BOAT, ModBlocks.MAPLE_PLANKS);
+        offerChestBoatRecipe(exporter, ModItems.MAPLE_CHEST_BOAT, ModItems.MAPLE_BOAT);
     }
 }

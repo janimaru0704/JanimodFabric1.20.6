@@ -40,5 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.ORE_DETECTOR, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HAMBURGER, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.MAPLE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAPLE_CHEST_BOAT, Models.GENERATED);
     }
 }

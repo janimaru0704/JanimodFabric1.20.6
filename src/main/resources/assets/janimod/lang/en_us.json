@@ -5,6 +5,8 @@
   "item.janimod.ore_detector.msg_fail": "No Ores Found",
   "item.janimod.ore_detector.tooltip": "Find ores underground",
   "item.janimod.hamburger": "Hamburger",
+  "item.janimod.maple_boat": "Maple Boat",
+  "item.janimod.maple_chest_boat": "Maple Boat with Chest",
 
   "block.janimod.ruby_block": "Block of Ruby",
   "block.janimod.ruby_ore": "Ruby Ore",
