@@ -32,10 +32,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_MAPLE_LOG)
                 .add(ModBlocks.STRIPPED_MAPLE_WOOD);
 
-        getOrCreateTagBuilder(BlockTags.LOGS).forceAddTag(ModTags.Blocks.MAPLE_LOGS);
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).forceAddTag(ModTags.Blocks.MAPLE_LOGS);
         getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.MAPLE_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.PLANKS).add(ModBlocks.MAPLE_PLANKS);
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS).add(ModBlocks.MAPLE_STAIRS);
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS).add(ModBlocks.MAPLE_SLAB);
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES).add(ModBlocks.MAPLE_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.MAPLE_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS).add(ModBlocks.MAPLE_DOOR);
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS).add(ModBlocks.MAPLE_TRAPDOOR);
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.MAPLE_PRESSURE_PLATE);
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS).add(ModBlocks.MAPLE_BUTTON);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RUBY_BLOCK).forceAddTag(ModTags.Blocks.RUBY_ORES);

@@ -15,6 +15,14 @@
   "block.janimod.stripped_maple_wood": "Stripped Maple Wood",
   "block.janimod.maple_leaves": "Maple Leaves",
   "block.janimod.maple_planks": "Maple Planks",
+  "block.janimod.maple_stairs": "Maple Stairs",
+  "block.janimod.maple_slab": "Maple Slab",
+  "block.janimod.maple_fence": "Maple Fence",
+  "block.janimod.maple_fence_gate": "Maple Fence Gate",
+  "block.janimod.maple_door": "Maple Door",
+  "block.janimod.maple_trapdoor": "Maple Trapdoor",
+  "block.janimod.maple_pressure_plate": "Maple Pressure Plate",
+  "block.janimod.maple_button": "Maple Button",
 
   "itemGroup.janimod_all": "Janimaru's MOD"
 }

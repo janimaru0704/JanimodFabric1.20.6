@@ -11,7 +11,11 @@ import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 
 public class ModModelProvider extends FabricModelProvider {
-    private static final BlockFamily MAPLE_FAMILY = BlockFamilies.register(ModBlocks.MAPLE_PLANKS).build();
+    private static final BlockFamily MAPLE_FAMILY = BlockFamilies.register(ModBlocks.MAPLE_PLANKS)
+            .stairs(ModBlocks.MAPLE_STAIRS).slab(ModBlocks.MAPLE_SLAB).fence(ModBlocks.MAPLE_FENCE)
+            .fenceGate(ModBlocks.MAPLE_FENCE_GATE).door(ModBlocks.MAPLE_DOOR)
+            .trapdoor(ModBlocks.MAPLE_TRAPDOOR).pressurePlate(ModBlocks.MAPLE_PRESSURE_PLATE)
+            .button(ModBlocks.MAPLE_BUTTON).build();
 
     public ModModelProvider(FabricDataOutput output) {
         super(output);

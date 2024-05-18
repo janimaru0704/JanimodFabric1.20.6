@@ -12,8 +12,11 @@ public class JanimodClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         Janimod.LOGGER.info("Initializing Client for " + Janimod.MOD_ID);
+        addItemsToGroups();
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_TRAPDOOR, RenderLayer.getCutout());
     }
 
     private void addItemsToGroups() {
@@ -33,6 +36,14 @@ public class JanimodClient implements ClientModInitializer {
             entries.add(ModBlocks.STRIPPED_MAPLE_LOG);
             entries.add(ModBlocks.STRIPPED_MAPLE_WOOD);
             entries.add(ModBlocks.MAPLE_PLANKS);
+            entries.add(ModBlocks.MAPLE_STAIRS);
+            entries.add(ModBlocks.MAPLE_SLAB);
+            entries.add(ModBlocks.MAPLE_FENCE);
+            entries.add(ModBlocks.MAPLE_FENCE_GATE);
+            entries.add(ModBlocks.MAPLE_DOOR);
+            entries.add(ModBlocks.MAPLE_TRAPDOOR);
+            entries.add(ModBlocks.MAPLE_PRESSURE_PLATE);
+            entries.add(ModBlocks.MAPLE_BUTTON);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(ModBlocks.RUBY_ORE);

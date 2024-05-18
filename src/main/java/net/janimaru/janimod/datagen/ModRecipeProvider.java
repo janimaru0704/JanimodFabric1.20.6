@@ -7,8 +7,10 @@ import net.janimaru.janimod.item.ModItems;
 import net.janimaru.janimod.util.ModTags;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -54,5 +56,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_MAPLE_WOOD)));
 
         offerPlanksRecipe(exporter, ModBlocks.MAPLE_PLANKS, ModTags.Items.MAPLE_LOGS, 4);
+        createStairsRecipe(ModBlocks.MAPLE_STAIRS, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_stairs").offerTo(exporter);
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAPLE_SLAB, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_slab").offerTo(exporter);
+        createFenceRecipe(ModBlocks.MAPLE_FENCE, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_fence").offerTo(exporter);
+        createFenceGateRecipe(ModBlocks.MAPLE_FENCE_GATE, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_fence_gate").offerTo(exporter);
+        createDoorRecipe(ModBlocks.MAPLE_DOOR, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_door").offerTo(exporter);
+        createTrapdoorRecipe(ModBlocks.MAPLE_TRAPDOOR, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_trapdoor").offerTo(exporter);
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, ModBlocks.MAPLE_PRESSURE_PLATE, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_pressure_plate").offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.MAPLE_BUTTON)
+                .input(ModBlocks.MAPLE_PLANKS, 1).criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_button").offerTo(exporter);
     }
 }

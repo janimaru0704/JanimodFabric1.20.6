@@ -15,6 +15,14 @@
   "block.janimod.stripped_maple_wood": "樹皮を剥いだカエデの木",
   "block.janimod.maple_leaves": "カエデの葉",
   "block.janimod.maple_planks": "カエデの板材",
+  "block.janimod.maple_stairs": "カエデの階段",
+  "block.janimod.maple_slab": "カエデのハーフブロック",
+  "block.janimod.maple_fence": "カエデのフェンス",
+  "block.janimod.maple_fence_gate": "カエデのフェンスゲート",
+  "block.janimod.maple_door": "カエデのドア",
+  "block.janimod.maple_trapdoor": "カエデのトラップドア",
+  "block.janimod.maple_pressure_plate": "カエデの感圧板",
+  "block.janimod.maple_button": "カエデのボタン",
 
   "itemGroup.janimod_all": "じゃにまるのMOD"
 }

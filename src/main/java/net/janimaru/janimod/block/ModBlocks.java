@@ -1,5 +1,7 @@
 package net.janimaru.janimod.block;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.type.BlockSetTypeBuilder;
+import net.fabricmc.fabric.api.object.builder.v1.block.type.WoodTypeBuilder;
 import net.janimaru.janimod.Janimod;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -12,6 +14,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
+    public static final BlockSetType MAPLE_SET_TYPE = new BlockSetTypeBuilder()
+            .register(new Identifier(Janimod.MOD_ID, "maple"));
+    public static final WoodType MAPLE_WOOD_TYPE = new WoodTypeBuilder()
+            .register(new Identifier(Janimod.MOD_ID, "maple"), MAPLE_SET_TYPE);
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(AbstractBlock.Settings.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.RED)));
@@ -33,6 +39,21 @@ public class ModBlocks {
 
     public static final Block MAPLE_PLANKS = registerBlock("maple_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(DyeColor.ORANGE)));
+    public static final Block MAPLE_STAIRS = registerBlock("maple_stairs",
+            new StairsBlock(MAPLE_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(MAPLE_PLANKS)));
+    public static final Block MAPLE_SLAB = registerBlock("maple_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).mapColor(MapColor.ORANGE)));
+    public static final Block MAPLE_FENCE = registerBlock("maple_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE)));
+    public static final Block MAPLE_FENCE_GATE = registerBlock("maple_fence_gate",
+            new FenceGateBlock(MAPLE_WOOD_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.ORANGE)));
+    public static final Block MAPLE_DOOR = registerBlock("maple_door",
+            new DoorBlock(MAPLE_SET_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).mapColor(MapColor.ORANGE)));
+    public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
+            new TrapdoorBlock(MAPLE_SET_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.ORANGE)));
+    public static final Block MAPLE_PRESSURE_PLATE = registerBlock("maple_pressure_plate",
+            new PressurePlateBlock(MAPLE_SET_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.ORANGE)));
+    public static final Block MAPLE_BUTTON = registerBlock("maple_button", Blocks.createWoodenButtonBlock(MAPLE_SET_TYPE));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
