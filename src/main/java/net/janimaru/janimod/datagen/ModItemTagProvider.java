@@ -3,6 +3,7 @@ package net.janimaru.janimod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.janimaru.janimod.block.ModBlocks;
+import net.janimaru.janimod.item.ModItems;
 import net.janimaru.janimod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -34,5 +35,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS).add(ModBlocks.MAPLE_TRAPDOOR.asItem());
         getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.MAPLE_PRESSURE_PLATE.asItem());
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS).add(ModBlocks.MAPLE_BUTTON.asItem());
+        getOrCreateTagBuilder(ItemTags.SIGNS).add(ModItems.MAPLE_SIGN);
+        getOrCreateTagBuilder(ItemTags.HANGING_SIGNS).add(ModItems.MAPLE_HANGING_SIGN);
     }
 }

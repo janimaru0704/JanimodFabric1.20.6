@@ -80,5 +80,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.MAPLE_BUTTON)
                 .input(ModBlocks.MAPLE_PLANKS, 1).criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
                 .group("wooden_button").offerTo(exporter);
+        createSignRecipe(ModBlocks.MAPLE_SIGN, Ingredient.ofItems(ModBlocks.MAPLE_BUTTON))
+                .criterion("has_planks", conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .group("wooden_sign").offerTo(exporter);
+        offerHangingSignRecipe(exporter, ModItems.MAPLE_HANGING_SIGN, ModBlocks.STRIPPED_MAPLE_LOG);
     }
 }

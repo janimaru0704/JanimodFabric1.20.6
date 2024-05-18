@@ -42,6 +42,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAPLE_TRAPDOOR);
         addDrop(ModBlocks.MAPLE_PRESSURE_PLATE);
         addDrop(ModBlocks.MAPLE_BUTTON);
+
+        addDrop(ModBlocks.MAPLE_SIGN);
+        addDrop(ModBlocks.MAPLE_HANGING_SIGN);
     }
 
     private LootTable.Builder rubyOre(Block drop) {

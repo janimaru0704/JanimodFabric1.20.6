@@ -23,6 +23,8 @@
   "block.janimod.maple_trapdoor": "カエデのトラップドア",
   "block.janimod.maple_pressure_plate": "カエデの感圧板",
   "block.janimod.maple_button": "カエデのボタン",
+  "block.janimod.maple_sign": "カエデの看板",
+  "block.janimod.maple_hanging_sign": "カエデの吊り看板",
 
   "itemGroup.janimod_all": "じゃにまるのMOD"
 }

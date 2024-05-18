@@ -1,5 +1,9 @@
 package net.janimaru.janimod.block;
 
+import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.type.BlockSetTypeBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.type.WoodTypeBuilder;
 import net.janimaru.janimod.Janimod;
@@ -14,6 +18,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
+    public static final Identifier MAPLE_SIGN_TEXTURE = new Identifier(Janimod.MOD_ID, "entity/signs/maple");
+    public static final Identifier MAPLE_HANGING_SIGN_TEXTURE = new Identifier(Janimod.MOD_ID, "entity/signs/hanging/maple");
+    public static final Identifier MAPLE_HANGING_SIGN_GUI_TEXTURE = new Identifier(Janimod.MOD_ID, "textures/gui/hanging_signs/maple");
+
     public static final BlockSetType MAPLE_SET_TYPE = new BlockSetTypeBuilder()
             .register(new Identifier(Janimod.MOD_ID, "maple"));
     public static final WoodType MAPLE_WOOD_TYPE = new WoodTypeBuilder()
@@ -55,9 +63,26 @@ public class ModBlocks {
             new PressurePlateBlock(MAPLE_SET_TYPE, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.ORANGE)));
     public static final Block MAPLE_BUTTON = registerBlock("maple_button", Blocks.createWoodenButtonBlock(MAPLE_SET_TYPE));
 
+    public static final Block MAPLE_SIGN = registerBlockWithoutItem("maple_sign",
+            new TerraformSignBlock(MAPLE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN).mapColor(MapColor.ORANGE)));
+    public static final Block MAPLE_WALL_SIGN = registerBlockWithoutItem("maple_wall_sign",
+            new TerraformWallSignBlock(MAPLE_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)
+                    .mapColor(MapColor.ORANGE).dropsLike(ModBlocks.MAPLE_SIGN)));
+    public static final Block MAPLE_HANGING_SIGN = registerBlockWithoutItem("maple_hanging_sign",
+            new TerraformHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN).mapColor(MAPLE_LOG.getDefaultMapColor())));
+    public static final Block MAPLE_WALL_HANGING_SIGN = registerBlockWithoutItem("maple_wall_hanging_sign",
+            new TerraformWallHangingSignBlock(MAPLE_HANGING_SIGN_TEXTURE, MAPLE_HANGING_SIGN_GUI_TEXTURE,
+                    AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)
+                            .mapColor(MAPLE_LOG.getDefaultMapColor()).dropsLike(ModBlocks.MAPLE_HANGING_SIGN)));
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(Janimod.MOD_ID, name), block);
+    }
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(Janimod.MOD_ID, name), block);
+        return registerBlockWithoutItem(name, block);
     }
 
     private static Item registerBlockItem(String name, Block block) {

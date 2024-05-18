@@ -15,7 +15,7 @@ public class ModModelProvider extends FabricModelProvider {
             .stairs(ModBlocks.MAPLE_STAIRS).slab(ModBlocks.MAPLE_SLAB).fence(ModBlocks.MAPLE_FENCE)
             .fenceGate(ModBlocks.MAPLE_FENCE_GATE).door(ModBlocks.MAPLE_DOOR)
             .trapdoor(ModBlocks.MAPLE_TRAPDOOR).pressurePlate(ModBlocks.MAPLE_PRESSURE_PLATE)
-            .button(ModBlocks.MAPLE_BUTTON).build();
+            .button(ModBlocks.MAPLE_BUTTON).sign(ModBlocks.MAPLE_SIGN, ModBlocks.MAPLE_WALL_SIGN).build();
 
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -32,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAPLE_LEAVES);
 
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MAPLE_PLANKS).family(MAPLE_FAMILY);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_MAPLE_LOG, ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN);
     }
 
     @Override
