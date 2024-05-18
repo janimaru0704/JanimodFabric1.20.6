@@ -45,6 +45,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.MAPLE_PRESSURE_PLATE);
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS).add(ModBlocks.MAPLE_BUTTON);
 
+        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS).add(ModBlocks.MAPLE_SIGN);
+        getOrCreateTagBuilder(BlockTags.WALL_SIGNS).add(ModBlocks.MAPLE_WALL_SIGN);
+        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS).add(ModBlocks.MAPLE_HANGING_SIGN);
+        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS).add(ModBlocks.MAPLE_WALL_HANGING_SIGN);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RUBY_BLOCK).forceAddTag(ModTags.Blocks.RUBY_ORES);
 

@@ -23,6 +23,10 @@ public class JanimodClient implements ClientModInitializer {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(ModItems.RUBY);
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+            entries.add(ModItems.MAPLE_SIGN);
+            entries.add(ModItems.MAPLE_HANGING_SIGN);
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(ModItems.ORE_DETECTOR);
         });

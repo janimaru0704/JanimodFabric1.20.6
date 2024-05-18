@@ -23,6 +23,8 @@
   "block.janimod.maple_trapdoor": "Maple Trapdoor",
   "block.janimod.maple_pressure_plate": "Maple Pressure Plate",
   "block.janimod.maple_button": "Maple Button",
+  "block.janimod.maple_sign": "Maple Sign",
+  "block.janimod.maple_hanging_sign": "Maple Hanging Sign",
 
   "itemGroup.janimod_all": "Janimaru's MOD"
 }
