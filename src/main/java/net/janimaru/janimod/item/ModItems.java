@@ -5,15 +5,34 @@ import net.janimaru.janimod.Janimod;
 import net.janimaru.janimod.block.ModBlocks;
 import net.janimaru.janimod.entity.ModBoats;
 import net.janimaru.janimod.item.custom.OreDetectorItem;
-import net.minecraft.item.HangingSignItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SignItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
+    public static final Item RUBY_SWORD = registerItem("ruby_sword", new SwordItem(ModToolMaterials.RUBY,
+            new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(
+                    ModToolMaterials.RUBY, 3, -2.4f
+            )).rarity(Rarity.RARE)));
+    public static final Item RUBY_SHOVEL = registerItem("ruby_shovel", new ShovelItem(ModToolMaterials.RUBY,
+            new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(
+                    ModToolMaterials.RUBY, 1.5f, -3.0f
+            )).rarity(Rarity.RARE)));
+    public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe", new PickaxeItem(ModToolMaterials.RUBY,
+            new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(
+                    ModToolMaterials.RUBY, 1.0f, -2.8f
+            )).rarity(Rarity.RARE)));
+    public static final Item RUBY_AXE = registerItem("ruby_axe", new AxeItem(ModToolMaterials.RUBY,
+            new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(
+                    ModToolMaterials.RUBY, 5.0f, -3.0f
+            )).rarity(Rarity.RARE)));
+    public static final Item RUBY_HOE = registerItem("ruby_hoe", new HoeItem(ModToolMaterials.RUBY,
+            new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(
+                    ModToolMaterials.RUBY, -8.0f, 1.0f
+            )).rarity(Rarity.RARE)));
 
     public static final Item ORE_DETECTOR = registerItem("ore_detector",
             new OreDetectorItem(new Item.Settings().maxDamage(128)));

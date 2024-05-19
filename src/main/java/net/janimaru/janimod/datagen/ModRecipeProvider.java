@@ -36,6 +36,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, RUBY_SMELT_INGREDIENTS, RecipeCategory.MISC, ModItems.RUBY,
                 0.6f, 100, "ruby");
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_SWORD)
+                .pattern("R").pattern("R").pattern("/")
+                .input('R', ModItems.RUBY).input('/', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_SHOVEL)
+                .pattern("R").pattern("/").pattern("/")
+                .input('R', ModItems.RUBY).input('/', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_PICKAXE)
+                .pattern("RRR").pattern(" / ").pattern(" / ")
+                .input('R', ModItems.RUBY).input('/', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_AXE)
+                .pattern("RR").pattern(("R/")).pattern(" /")
+                .input('R', ModItems.RUBY).input('/', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_HOE)
+                .pattern("RR").pattern(" /").pattern(" /")
+                .input('R', ModItems.RUBY).input('/', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.HAMBURGER)
                 .pattern("B").pattern("C").pattern("B")
                 .input('B', Items.BREAD).input('C', Items.COOKED_BEEF)

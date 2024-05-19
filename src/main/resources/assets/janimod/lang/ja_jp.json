@@ -1,5 +1,10 @@
 {
   "item.janimod.ruby": "ルビー",
+  "item.janimod.ruby_sword": "ルビーの剣",
+  "item.janimod.ruby_shovel": "ルビーのシャベル",
+  "item.janimod.ruby_pickaxe": "ルビーのツルハシ",
+  "item.janimod.ruby_axe": "ルビーの斧",
+  "item.janimod.ruby_hoe": "ルビーのクワ",
   "item.janimod.ore_detector": "鉱石検出器",
   "item.janimod.ore_detector.msg": "%sを座標: %d, %d, %d で発見しました",
   "item.janimod.ore_detector.msg_fail": "鉱石は見つかりませんでした",

@@ -13,6 +13,8 @@ public class ModTags {
         public static final TagKey<Block> RUBY_ORES = createTag("ruby_ores");
         public static final TagKey<Block> MAPLE_LOGS = createTag("maple_logs");
 
+        public static final TagKey<Block> INCORRECT_FOR_RUBY_TOOL = createTag("incorrect_for_ruby_tool");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(Janimod.MOD_ID, name));
         }

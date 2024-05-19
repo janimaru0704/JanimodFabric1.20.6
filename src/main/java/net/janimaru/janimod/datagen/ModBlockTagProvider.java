@@ -3,10 +3,12 @@ package net.janimaru.janimod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.janimaru.janimod.block.ModBlocks;
+import net.janimaru.janimod.item.ModItems;
 import net.janimaru.janimod.util.ModTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -31,6 +33,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MAPLE_LOG).add(ModBlocks.MAPLE_WOOD)
                 .add(ModBlocks.STRIPPED_MAPLE_LOG)
                 .add(ModBlocks.STRIPPED_MAPLE_WOOD);
+
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL);
+
+        getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS).add(ModBlocks.RUBY_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).forceAddTag(ModTags.Blocks.MAPLE_LOGS);
         getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.MAPLE_LEAVES);

@@ -1,6 +1,7 @@
-// 1.20.6	2024-05-18T12:06:44.1497298	Janimaru's MOD/Block Loot Tables
+// 1.20.6	2024-05-19T10:24:55.4982031	Janimaru's MOD/Block Loot Tables
 6d3448fe5407b9ba5c5ae99dc96d8c4376c565a0 data\janimod\loot_tables\blocks\ruby_block.json
 c08a08cf0c19067d0f486aeca1804a4c1b7c7b99 data\janimod\loot_tables\blocks\maple_trapdoor.json
+edda17e4d0c47e0fb3cc85d2b3457a0a18734c37 data\janimod\loot_tables\blocks\maple_hanging_sign.json
 d7363f19af778d253d15e87082be6cb25c33c28c data\janimod\loot_tables\blocks\stripped_maple_log.json
 e39dd77d14c7017ded6ea853dd743757216adc67 data\janimod\loot_tables\blocks\maple_wood.json
 81b99bce8844e0bdca7c5d628125eee0427422ed data\janimod\loot_tables\blocks\maple_leaves.json
@@ -12,6 +13,7 @@ e75ffcc6b1291b30c6e23f14b578b19b2b91bf36 data\janimod\loot_tables\blocks\ruby_or
 2573456077535012f7fbba6187f8b0923e763a73 data\janimod\loot_tables\blocks\maple_button.json
 28317eb6a8bfd2665fbca29a5d529ae4698d0eba data\janimod\loot_tables\blocks\maple_slab.json
 b17e9f00000e39327b4bd9ca33944aad7a6b6868 data\janimod\loot_tables\blocks\deepslate_ruby_ore.json
+e5fac4d719d209acf7a8dbb3efb8605f10ea592b data\janimod\loot_tables\blocks\maple_sign.json
 fd97ba62354815b7d2def84aaa20b935cd4e3611 data\janimod\loot_tables\blocks\maple_stairs.json
 3056e500d752c3ba9abab45be2bd7afc3da234b6 data\janimod\loot_tables\blocks\maple_log.json
 e58e6967a0b09d2993f313db984897c5c87fc03f data\janimod\loot_tables\blocks\maple_door.json

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "janimod:ruby"
+    }
+  },
+  "pattern": [
+    "RR",
+    "R/",
+    " /"
+  ],
+  "result": {
+    "count": 1,
+    "id": "janimod:ruby_axe"
+  }
+}

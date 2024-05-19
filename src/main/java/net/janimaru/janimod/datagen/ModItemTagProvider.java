@@ -23,6 +23,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.STRIPPED_MAPLE_LOG.asItem())
                 .add(ModBlocks.STRIPPED_MAPLE_WOOD.asItem());
 
+        getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS).add(ModItems.RUBY);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.RUBY_SWORD);
+        getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.RUBY_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.RUBY_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.RUBY_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.RUBY_HOE);
+
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN).forceAddTag(ModTags.Items.MAPLE_LOGS);
         getOrCreateTagBuilder(ItemTags.LEAVES).add(ModBlocks.MAPLE_LEAVES.asItem());
 

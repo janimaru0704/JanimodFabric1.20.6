@@ -16,6 +16,11 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.janimod_all"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries(((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+                        entries.add(ModItems.RUBY_SWORD);
+                        entries.add(ModItems.RUBY_SHOVEL);
+                        entries.add(ModItems.RUBY_PICKAXE);
+                        entries.add(ModItems.RUBY_AXE);
+                        entries.add(ModItems.RUBY_HOE);
                         entries.add(ModItems.ORE_DETECTOR);
                         entries.add(ModItems.HAMBURGER);
 

@@ -31,7 +31,15 @@ public class JanimodClient implements ClientModInitializer {
             entries.add(ModItems.MAPLE_SIGN);
             entries.add(ModItems.MAPLE_HANGING_SIGN);
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+            entries.add(ModItems.RUBY_SWORD);
+            entries.add(ModItems.RUBY_AXE);
+        });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.add(ModItems.RUBY_SHOVEL);
+            entries.add(ModItems.RUBY_PICKAXE);
+            entries.add(ModItems.RUBY_AXE);
+            entries.add(ModItems.RUBY_HOE);
             entries.add(ModItems.ORE_DETECTOR);
             entries.add(ModItems.MAPLE_BOAT);
             entries.add(ModItems.MAPLE_CHEST_BOAT);

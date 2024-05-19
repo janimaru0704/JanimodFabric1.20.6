@@ -1,13 +1,23 @@
-// 1.20.6	2024-05-18T12:06:44.1547271	Janimaru's MOD/Tags for minecraft:item
+// 1.20.6	2024-05-19T10:24:55.5022002	Janimaru's MOD/Tags for minecraft:item
+7f60a967da42885414671fbc0878b5b1031ffc6c data\minecraft\tags\items\axes.json
+4dde69181bbecb66b0eb610d0fdcf071dc32e99e data\minecraft\tags\items\swords.json
+e96e06177a7940e1986b35fd8bf86ab239563850 data\minecraft\tags\items\signs.json
+e66e442b3baf9f7e89cf925f38f1326de30f22d5 data\minecraft\tags\items\hanging_signs.json
+5e99c2dd7e84e78623b19a943060034fc80299c4 data\minecraft\tags\items\chest_boats.json
 8b57fc2935c9888f8681e5ae73eac83ebb7039f5 data\minecraft\tags\items\wooden_pressure_plates.json
+6744f72e83ad4b21414f1f9084e49f0070b90a04 data\minecraft\tags\items\hoes.json
 53cbfcd5098852798826dc7b505838992e28496f data\minecraft\tags\items\fence_gates.json
 552f117799fa95f1c156cd19766df46a4d876551 data\minecraft\tags\items\wooden_buttons.json
 96aff51eeb7813a1a9b31e52e2c41cc0f93f8e4d data\minecraft\tags\items\wooden_slabs.json
 e6cbdf0fda294e93a1d6b756e3c3b3114b807a13 data\minecraft\tags\items\wooden_stairs.json
+80103c5733fda2471b32bc52be01156b5d16f5c5 data\minecraft\tags\items\shovels.json
 53cbfcd5098852798826dc7b505838992e28496f data\minecraft\tags\items\wooden_fences.json
 2ab561b28d10693c3bb2f2193029ff9572fa329a data\minecraft\tags\items\leaves.json
+9cc24518f0616d12a8a1d2e3d1466d6bc408da30 data\minecraft\tags\items\boats.json
 937b20d6bc5ba35795823de60f631257b8df516d data\minecraft\tags\items\logs_that_burn.json
 e18f9d5bfb08b770e93e78b27fb75573b70926d7 data\minecraft\tags\items\planks.json
+f38a3174d3fb38efdf5a904fee44cd04b3822c24 data\minecraft\tags\items\pickaxes.json
 08ded153e240921d722fed192712c3dd27392c53 data\minecraft\tags\items\wooden_trapdoors.json
 69a75efb1b571f2f9a60b9ce05cc49efcb9ee77e data\minecraft\tags\items\wooden_doors.json
 dee70e4d482dd84b03e3d435653903a07fe3bcc2 data\janimod\tags\items\maple_logs.json
+2659b6de3c57a65b539ba6a2238ebd2b83f8aaef data\minecraft\tags\items\beacon_payment_items.json
