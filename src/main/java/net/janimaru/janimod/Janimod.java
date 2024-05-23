@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.janimaru.janimod.block.ModBlocks;
 import net.janimaru.janimod.entity.ModBoats;
+import net.janimaru.janimod.item.ModArmorMaterials;
 import net.janimaru.janimod.item.ModItemGroups;
 import net.janimaru.janimod.item.ModItems;
 import net.janimaru.janimod.util.ModTags;
@@ -19,6 +20,8 @@ public class Janimod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
+		ModArmorMaterials.registerModArmorMaterials();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

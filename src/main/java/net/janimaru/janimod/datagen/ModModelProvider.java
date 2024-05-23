@@ -9,6 +9,7 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     private static final BlockFamily MAPLE_FAMILY = BlockFamilies.register(ModBlocks.MAPLE_PLANKS)
@@ -45,6 +46,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUBY_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ORE_DETECTOR, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HAMBURGER, Models.GENERATED);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUBY_BOOTS);
 
         itemModelGenerator.register(ModItems.MAPLE_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAPLE_CHEST_BOAT, Models.GENERATED);

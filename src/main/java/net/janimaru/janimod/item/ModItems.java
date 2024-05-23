@@ -34,6 +34,15 @@ public class ModItems {
                     ModToolMaterials.RUBY, -8.0f, 1.0f
             )).rarity(Rarity.RARE)));
 
+    public static final Item RUBY_HELMET = registerItem("ruby_helmet", new ArmorItem(ModArmorMaterials.RUBY,
+            ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(32)).rarity(Rarity.RARE)));
+    public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate", new ArmorItem(ModArmorMaterials.RUBY,
+            ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(32)).rarity(Rarity.RARE)));
+    public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings", new ArmorItem(ModArmorMaterials.RUBY,
+            ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(32)).rarity(Rarity.RARE)));
+    public static final Item RUBY_BOOTS = registerItem("ruby_boots", new ArmorItem(ModArmorMaterials.RUBY,
+            ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(32)).rarity(Rarity.RARE)));
+
     public static final Item ORE_DETECTOR = registerItem("ore_detector",
             new OreDetectorItem(new Item.Settings().maxDamage(128)));
 

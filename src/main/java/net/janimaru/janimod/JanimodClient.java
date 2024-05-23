@@ -34,6 +34,10 @@ public class JanimodClient implements ClientModInitializer {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(ModItems.RUBY_SWORD);
             entries.add(ModItems.RUBY_AXE);
+            entries.add(ModItems.RUBY_HELMET);
+            entries.add(ModItems.RUBY_CHESTPLATE);
+            entries.add(ModItems.RUBY_LEGGINGS);
+            entries.add(ModItems.RUBY_BOOTS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(ModItems.RUBY_SHOVEL);

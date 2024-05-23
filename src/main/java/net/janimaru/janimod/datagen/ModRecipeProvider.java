@@ -62,6 +62,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_HELMET)
+                .pattern("RRR").pattern("R R")
+                .input('R', ModItems.RUBY).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_CHESTPLATE)
+                .pattern("R R").pattern("RRR").pattern("RRR")
+                .input('R', ModItems.RUBY).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_LEGGINGS)
+                .pattern("RRR").pattern("R R").pattern("R R")
+                .input('R', ModItems.RUBY).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_BOOTS)
+                .pattern("R R").pattern("R R")
+                .input('R', ModItems.RUBY).criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.HAMBURGER)
                 .pattern("B").pattern("C").pattern("B")
                 .input('B', Items.BREAD).input('C', Items.COOKED_BEEF)
@@ -69,13 +86,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COOKED_BEEF), conditionsFromItem(Items.COOKED_BEEF))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HAMBURGER)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAPLE_WOOD)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAPLE_WOOD, 4)
                 .pattern("XX").pattern("XX")
                 .input('X', ModBlocks.MAPLE_LOG)
                 .criterion(hasItem(ModBlocks.MAPLE_LOG), conditionsFromItem(ModBlocks.MAPLE_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_WOOD)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_MAPLE_WOOD)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_MAPLE_WOOD, 4)
                 .pattern("XX").pattern("XX")
                 .input('X', ModBlocks.STRIPPED_MAPLE_LOG)
                 .criterion(hasItem(ModBlocks.STRIPPED_MAPLE_LOG), conditionsFromItem(ModBlocks.STRIPPED_MAPLE_LOG))

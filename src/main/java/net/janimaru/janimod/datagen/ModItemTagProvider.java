@@ -29,6 +29,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.RUBY_PICKAXE);
         getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.RUBY_AXE);
         getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.RUBY_HOE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR).add(ModItems.RUBY_HELMET);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR).add(ModItems.RUBY_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR).add(ModItems.RUBY_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR).add(ModItems.RUBY_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN).forceAddTag(ModTags.Items.MAPLE_LOGS);
         getOrCreateTagBuilder(ItemTags.LEAVES).add(ModBlocks.MAPLE_LEAVES.asItem());
