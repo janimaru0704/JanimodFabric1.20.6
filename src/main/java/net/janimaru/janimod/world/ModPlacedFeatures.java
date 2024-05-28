@@ -1,6 +1,7 @@
 package net.janimaru.janimod.world;
 
 import net.janimaru.janimod.Janimod;
+import net.janimaru.janimod.mixin.OrePlacedFeaturesMixin;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -21,7 +22,7 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, RUBY_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.RUBY_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(5, HeightRangePlacementModifier.trapezoid(
+                OrePlacedFeaturesMixin.modifiersWithCount(5, HeightRangePlacementModifier.trapezoid(
                         YOffset.fixed(-32), YOffset.fixed(32))));
     }
 
