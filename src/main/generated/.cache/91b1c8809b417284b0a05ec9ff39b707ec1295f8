@@ -1,7 +1,7 @@
-// 1.20.6	2024-05-19T13:09:32.576314	Janimaru's MOD/Tags for minecraft:block
+// 1.20.6	2024-05-28T22:28:00.593538	Janimaru's MOD/Tags for minecraft:block
 53cbfcd5098852798826dc7b505838992e28496f data\minecraft\tags\blocks\wooden_fences.json
-e18f9d5bfb08b770e93e78b27fb75573b70926d7 data\minecraft\tags\blocks\planks.json
 69a75efb1b571f2f9a60b9ce05cc49efcb9ee77e data\minecraft\tags\blocks\wooden_doors.json
+e18f9d5bfb08b770e93e78b27fb75573b70926d7 data\minecraft\tags\blocks\planks.json
 e66e442b3baf9f7e89cf925f38f1326de30f22d5 data\minecraft\tags\blocks\ceiling_hanging_signs.json
 dee70e4d482dd84b03e3d435653903a07fe3bcc2 data\janimod\tags\blocks\maple_logs.json
 2260159d50ab25f25702457bdc2e719634f289db data\janimod\tags\blocks\detectable_ores.json
@@ -19,5 +19,5 @@ c1c5d25f7c9e6cf6994f124ef0e42f0be9432e11 data\minecraft\tags\blocks\wall_hanging
 08ded153e240921d722fed192712c3dd27392c53 data\minecraft\tags\blocks\wooden_trapdoors.json
 552f117799fa95f1c156cd19766df46a4d876551 data\minecraft\tags\blocks\wooden_buttons.json
 96aff51eeb7813a1a9b31e52e2c41cc0f93f8e4d data\minecraft\tags\blocks\wooden_slabs.json
-2ab561b28d10693c3bb2f2193029ff9572fa329a data\minecraft\tags\blocks\leaves.json
 41ad635837f9121e40144c34acbcb8f76d2f55ff data\minecraft\tags\blocks\beacon_base_blocks.json
+2ab561b28d10693c3bb2f2193029ff9572fa329a data\minecraft\tags\blocks\leaves.json

@@ -1,4 +1,4 @@
-// 1.20.6	2024-05-19T13:09:32.5783103	Janimaru's MOD/Tags for minecraft:item
+// 1.20.6	2024-05-28T22:28:00.5945379	Janimaru's MOD/Tags for minecraft:item
 e66e442b3baf9f7e89cf925f38f1326de30f22d5 data\minecraft\tags\items\hanging_signs.json
 53cbfcd5098852798826dc7b505838992e28496f data\minecraft\tags\items\fence_gates.json
 552f117799fa95f1c156cd19766df46a4d876551 data\minecraft\tags\items\wooden_buttons.json
@@ -7,8 +7,8 @@ e66e442b3baf9f7e89cf925f38f1326de30f22d5 data\minecraft\tags\items\hanging_signs
 53cbfcd5098852798826dc7b505838992e28496f data\minecraft\tags\items\wooden_fences.json
 9250cbe5d61fd3ac9639221636d86fa960f18f63 data\minecraft\tags\items\head_armor.json
 9cc24518f0616d12a8a1d2e3d1466d6bc408da30 data\minecraft\tags\items\boats.json
-937b20d6bc5ba35795823de60f631257b8df516d data\minecraft\tags\items\logs_that_burn.json
 491f3881d0b37cbe0047053410cc4cd02ea16bcf data\minecraft\tags\items\leg_armor.json
+937b20d6bc5ba35795823de60f631257b8df516d data\minecraft\tags\items\logs_that_burn.json
 e18f9d5bfb08b770e93e78b27fb75573b70926d7 data\minecraft\tags\items\planks.json
 f38a3174d3fb38efdf5a904fee44cd04b3822c24 data\minecraft\tags\items\pickaxes.json
 69a75efb1b571f2f9a60b9ce05cc49efcb9ee77e data\minecraft\tags\items\wooden_doors.json

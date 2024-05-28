@@ -1,4 +1,4 @@
-// 1.20.6	2024-05-19T13:09:32.5793122	Janimaru's MOD/Model Definitions
+// 1.20.6	2024-05-28T22:28:00.5965379	Janimaru's MOD/Model Definitions
 ca479596196354917e0cd948b0076f3bf547e895 assets\janimod\models\block\maple_pressure_plate.json
 5eed6b2b549c061977ea43ffa9524b248ac7db41 assets\janimod\models\item\ruby_leggings_quartz_trim.json
 bf5720456fd635ed2c97b9a92bedc29fdd3bbed2 assets\janimod\models\item\ruby_leggings_emerald_trim.json
@@ -43,10 +43,10 @@ e2ab362d5381b8c5a4397a011ba9c99136c7f263 assets\janimod\models\item\ruby_chestpl
 31841f6ead3197f88001854596bb14a614d0c7dd assets\janimod\models\block\maple_wood.json
 206026200b206d45fcf9f844f71e5cc720b55c25 assets\janimod\models\item\ruby_helmet_emerald_trim.json
 cfea9a222fe7948ef9af5d87b65b18f7dee90cfb assets\janimod\models\block\maple_button_pressed.json
-9331906385ae8173a62fe3ac144bef182f6e2eb4 assets\janimod\models\block\maple_fence_side.json
 802c935bb7babce3909aefbf5aacc555317ac496 assets\janimod\models\block\maple_door_top_right_open.json
-7a8aee4e31fcd6f6651587332caa31c603380a5a assets\janimod\models\block\maple_fence_gate_wall_open.json
+9331906385ae8173a62fe3ac144bef182f6e2eb4 assets\janimod\models\block\maple_fence_side.json
 dc71db29f1d9f315d32456a273c829c46b178c45 assets\janimod\models\item\ruby_helmet_gold_trim.json
+7a8aee4e31fcd6f6651587332caa31c603380a5a assets\janimod\models\block\maple_fence_gate_wall_open.json
 049e2ecd597817ac3d3e65ed199def41044cf63d assets\janimod\models\item\ruby_chestplate_diamond_trim.json
 b204a0ec6584a2485282b90363da9484bdb65fd9 assets\janimod\models\block\maple_fence_inventory.json
 c67ccdeee5fc4fd283dfcc2d59abafbe70c0e45b assets\janimod\models\item\maple_fence.json
@@ -80,9 +80,9 @@ a596c13362354879c21364e5a72ec2fbfb1e4eb4 assets\janimod\models\block\maple_fence
 d404568eb5fc7fc02ad7ba4c5515347b25b28401 assets\janimod\models\block\maple_planks.json
 a34ab26d03998417c73a55ac1d4922763a637305 assets\janimod\blockstates\ruby_ore.json
 bef21be6d424c813cf42d19c6719b06669f1118b assets\janimod\models\block\maple_slab.json
+d1bc04162fb474aea424b989e4b7bd0ab4d76c93 assets\janimod\blockstates\deepslate_ruby_ore.json
 376cf24c52cd748a38f85c0f9e55fa5af4befcf5 assets\janimod\blockstates\ruby_block.json
 e8df5ca104e1ab20c620755e1ce43c20e8efa87f assets\janimod\blockstates\maple_slab.json
-d1bc04162fb474aea424b989e4b7bd0ab4d76c93 assets\janimod\blockstates\deepslate_ruby_ore.json
 8a7938d0664880387d7ef3d6b4a783b50dc0de62 assets\janimod\models\block\stripped_maple_wood.json
 4f160d24ca4d8d65d611641ecd7152ca86835fb1 assets\janimod\blockstates\maple_planks.json
 0b019126877d890058c8d4e042b270660ba99ff3 assets\janimod\blockstates\maple_trapdoor.json
