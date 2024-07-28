@@ -25,7 +25,7 @@ public class OreDetectorItem extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        if (context.getWorld().isClient) return ActionResult.SUCCESS;
+        if (context.getWorld().isClient()) return ActionResult.SUCCESS;
 
         BlockPos pos = context.getBlockPos();
         PlayerEntity player = Objects.requireNonNull(context.getPlayer());
