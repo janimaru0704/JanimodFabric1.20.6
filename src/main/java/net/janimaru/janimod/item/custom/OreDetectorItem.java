@@ -1,6 +1,5 @@
 package net.janimaru.janimod.item.custom;
 
-import net.janimaru.janimod.item.ModItems;
 import net.janimaru.janimod.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipType;
@@ -15,7 +14,6 @@ import net.minecraft.util.math.BlockPos;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.function.Predicate;
 
 public class OreDetectorItem extends Item {
 
