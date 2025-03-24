@@ -5,7 +5,6 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.janimaru.janimod.block.ModBlocks;
-import net.janimaru.janimod.datagen.ModWorldGenerator;
 import net.janimaru.janimod.entity.ModBoats;
 import net.janimaru.janimod.item.ModArmorMaterials;
 import net.janimaru.janimod.item.ModItemGroups;
